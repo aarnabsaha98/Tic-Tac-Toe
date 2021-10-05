@@ -1,3 +1,3 @@
 # Tic-tac-toe
 # console game.
-# Added AI.
+# Added AI. Using Game theory Minimax Algorithm.
