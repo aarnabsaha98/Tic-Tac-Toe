@@ -1,0 +1,93 @@
+* {
+font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+box-sizing: border-box;
+background-color: rgba(57, 57, 214,0.7);
+color: yellow
+}
+
+section {
+text-align: center;
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+}
+
+.game--title {
+font-size: 90px;
+}
+
+.game--container {
+display: grid;
+grid-template-columns: repeat(3, auto);
+justify-content: center;
+width: 306px;
+margin: 10px auto;
+cursor: pointer;
+}
+
+.cell {
+border: 2px solid #333;
+width: 120px;
+height: 120px;
+display:flex;
+justify-content: center;
+align-items: center;
+font-size:80px
+}
+
+.cell:first-child,
+.cell:nth-child(2),
+.cell:nth-child(3) {
+border-top: none;
+}
+
+.cell:nth-child(3n+1) {
+border-left: none;
+}
+
+.cell:nth-child(3n) {
+border-right: none;
+}
+
+.cell:last-child,
+.cell:nth-child(7),
+.cell:nth-child(8) {
+border-bottom: none;
+}
+
+/* // style the marker element  */
+
+.game-status {
+/* border: 1px solid #323232; */
+border-radius: 4pc;
+height: 35%;
+width: 35%;
+position: absolute;
+left: 32%;
+top:20%;
+background-color:rgba(49, 49, 187,0.9);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-top: 100px;
+}
+
+.game--status {
+font-size: 40px;
+}
+
+.game--restart {
+width: 10pc;
+height: 3pc;
+border-radius: 1pc;
+background-color: rgb(191, 201, 50);
+font-size :20px;
+}
+
+.hide {
+display: none;
+}
